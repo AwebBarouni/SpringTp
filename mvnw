@@ -80,7 +80,6 @@ die() {
 # sha256sum is preferred, but md5sum is also acceptable
 if ! command -v unzip >/dev/null; then
   die "ERROR: unzip not found"
-  exit 1
 fi
 
 if [ "${MVNW_VERBOSE-}" = debug ]; then
